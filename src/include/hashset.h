@@ -21,6 +21,10 @@
 #ifndef COLLECTIONS_C_HASHSET_H
 #define COLLECTIONS_C_HASHSET_H
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
 #include "common.h"
 #include "hashtable.h"
 
@@ -74,5 +78,9 @@ enum cc_stat  hashset_iter_remove   (HashSetIter *iter, void **out);
         while (hashset_iter_next(&hashset_iter_53d46d2a04458e7b, &val) != CC_ITER_END) \
             body                                                        \
                 }
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* COLLECTIONS_C_HASHSET_H */

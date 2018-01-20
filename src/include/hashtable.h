@@ -21,6 +21,10 @@
 #ifndef COLLECTIONS_C_HASHTABLE_H
 #define COLLECTIONS_C_HASHTABLE_H
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
 #include "array.h"
 #include "common.h"
 
@@ -159,5 +163,8 @@ enum cc_stat  hashtable_iter_remove     (HashTableIter *iter, void **out);
 #define STRING_HASH  hashtable_hash_string
 #define POINTER_HASH hashtable_hash_ptr
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* COLLECTIONS_C_HASHTABLE_H */
